@@ -1,6 +1,7 @@
 const { nanoid } = require("nanoid");
 const notes = require("./notes");
 
+// Fungsi untuk menambahkan data Notes
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
 
